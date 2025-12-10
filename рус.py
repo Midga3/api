@@ -15,8 +15,8 @@ def добавить(i1, i2):
     i1.append(i2)
 def кол(i1):
     return(len(i1))
-def форрейндж(i1, i2):
-    for i in range(i1):
+def форрейндж(i1, i2, i3):
+    for i in range(i1, i2):
         exec(str(i2))
 def форин(i1, i2):
     for i in i1:
@@ -25,12 +25,14 @@ def макс(i1):
     return(max(i1))
 def мин(i1):
     return(min(i1))
-def 
+def стоп():
+    exit()
+def запуск(i1):
+    exec(str(i1))
 M = []
-for i in range(1016, 7938):
-    if i % 3 == 0 and i % 7 != 0 and i % 17 != 0 and i % 19 != 0 and i % 27 != 0:
-      M.append(i)
+for i in range(1813, 6861):
+    if i % 5 == 0 and i % 6 != 0 and i % 10 != 0 and i % 15 != 0 and i % 23 != 0:
+        добавить(M, i)
 принт(M)
 принт(кол(M))
 принт(макс(M))
-ифравно(1, 1, print("Hello!"))
